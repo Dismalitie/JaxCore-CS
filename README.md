@@ -4,12 +4,12 @@ JaxCore-CS is a project that I'm working on to rewrite [JaxCore](https://jaxcore
 
 Build in VS or get executable from [here](https://github.com/Dismalitie/JaxCore-CS/tree/main/bin/Debug) - **NOT JUST THE EXE, DOWNLOAD THE WHOLE FOLDER**
 
-# JaxCore-CS :: PTB1
+# JaxCore-CS :: PTB2
 
 ```ini
-[+] UI
-[+] Home Page
+[+] Shop
+[+] Library
 [+] Basic Functionality
-[*] Tab functionality
+[+] Tab System functionality
 [*] All the other features
 ```
