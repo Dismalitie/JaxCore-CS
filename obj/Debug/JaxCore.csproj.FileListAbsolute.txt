@@ -11,3 +11,6 @@ C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.pdb
 C:\Users\harry\source\repos\JaxCore\JaxCore\bin\Debug\Siticone.UI.dll
 C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.csproj.CopyComplete
 C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_home.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_shop.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_lib.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_info.resources

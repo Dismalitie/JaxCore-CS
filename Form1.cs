@@ -1,5 +1,6 @@
 ﻿using JaxCore.res.UCs;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace JaxCore
@@ -23,15 +24,36 @@ namespace JaxCore
         }
 
         Functions f = new Functions();
+        UC_tab_home tab_home = new UC_tab_home();
+        UC_tab_shop tab_shop = new UC_tab_shop();
+        UC_tab_lib tab_lib = new UC_tab_lib();
+        UC_tab_info tab_inf = new UC_tab_info();
+
+        private void settab(Siticone.UI.WinForms.SiticoneGradientButton button, UserControl tab)
+        {
+            home.FillColor = Color.FromArgb(30, 30, 30);
+            home.FillColor2 = Color.FromArgb(30, 30, 30);
+            shop.FillColor = Color.FromArgb(30, 30, 30);
+            shop.FillColor2 = Color.FromArgb(30, 30, 30);
+            lib.FillColor = Color.FromArgb(30, 30, 30);
+            lib.FillColor2 = Color.FromArgb(30, 30, 30);
+            inf.FillColor = Color.FromArgb(30, 30, 30);
+            inf.FillColor2 = Color.FromArgb(30, 30, 30);
+            settings.FillColor = Color.FromArgb(30, 30, 30);
+            settings.FillColor2 = Color.FromArgb(30, 30, 30);
+
+            button.FillColor = Color.FromArgb(255, 183, 0);
+            button.FillColor2 = Color.FromArgb(240, 52, 0);
+
+            cont.Controls.Clear();
+            cont.Controls.Add(tab);
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UC_tab_home home = new UC_tab_home();
-
             Text = f.title;
-            title.Text = f.title;
 
-            cont.Controls.Add(home);
+            cont.Controls.Add(tab_home);
         }
 
         private void cls_MouseEnter(object sender, EventArgs e)
@@ -86,6 +108,26 @@ namespace JaxCore
             {
                 Application.Exit();
             }
+        }
+
+        private void shop_Click(object sender, EventArgs e)
+        {
+            settab(shop, tab_shop);
+        }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            settab(home, tab_home);
+        }
+
+        private void lib_Click(object sender, EventArgs e)
+        {
+            settab(lib, tab_lib);
+        }
+
+        private void inf_Click(object sender, EventArgs e)
+        {
+            settab(inf, tab_inf);
         }
     }
 }

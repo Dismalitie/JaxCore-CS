@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabbar = new Siticone.UI.WinForms.SiticonePanel();
             this.topbar = new Siticone.UI.WinForms.SiticonePanel();
-            this.title = new System.Windows.Forms.Label();
             this.win_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.bar_drag = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.cont = new System.Windows.Forms.Panel();
@@ -80,7 +79,6 @@
             this.topbar.BorderThickness = 1;
             this.topbar.Controls.Add(this.min);
             this.topbar.Controls.Add(this.cls);
-            this.topbar.Controls.Add(this.title);
             this.topbar.Controls.Add(this.icon);
             this.topbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.topbar.Location = new System.Drawing.Point(-8, -11);
@@ -88,17 +86,6 @@
             this.topbar.ShadowDecoration.Parent = this.topbar;
             this.topbar.Size = new System.Drawing.Size(1254, 40);
             this.topbar.TabIndex = 1;
-            // 
-            // title
-            // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Segoe UI Variable Display", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.title.Location = new System.Drawing.Point(46, 15);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(66, 20);
-            this.title.TabIndex = 1;
-            this.title.Text = "JaxCore";
             // 
             // win_eli
             // 
@@ -115,10 +102,6 @@
             this.cont.Name = "cont";
             this.cont.Size = new System.Drawing.Size(1235, 500);
             this.cont.TabIndex = 2;
-            // 
-            // title_drag
-            // 
-            this.title_drag.TargetControl = this.title;
             // 
             // fd_in
             // 
@@ -189,6 +172,7 @@
             this.inf.ShadowDecoration.Parent = this.inf;
             this.inf.Size = new System.Drawing.Size(50, 50);
             this.inf.TabIndex = 4;
+            this.inf.Click += new System.EventHandler(this.inf_Click);
             // 
             // settings
             // 
@@ -235,6 +219,7 @@
             this.lib.ShadowDecoration.Parent = this.lib;
             this.lib.Size = new System.Drawing.Size(50, 50);
             this.lib.TabIndex = 2;
+            this.lib.Click += new System.EventHandler(this.lib_Click);
             // 
             // shop
             // 
@@ -258,6 +243,7 @@
             this.shop.ShadowDecoration.Parent = this.shop;
             this.shop.Size = new System.Drawing.Size(50, 50);
             this.shop.TabIndex = 1;
+            this.shop.Click += new System.EventHandler(this.shop_Click);
             // 
             // home
             // 
@@ -282,6 +268,7 @@
             this.home.ShadowDecoration.Parent = this.home;
             this.home.Size = new System.Drawing.Size(50, 50);
             this.home.TabIndex = 0;
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // Form1
             // 
@@ -300,7 +287,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabbar.ResumeLayout(false);
             this.topbar.ResumeLayout(false);
-            this.topbar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cls)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
@@ -320,7 +306,6 @@
         private Siticone.UI.WinForms.SiticoneGradientButton settings;
         private Siticone.UI.WinForms.SiticoneGradientButton lib;
         private Siticone.UI.WinForms.SiticoneGradientButton inf;
-        private System.Windows.Forms.Label title;
         private System.Windows.Forms.PictureBox icon;
         private System.Windows.Forms.PictureBox min;
         private System.Windows.Forms.PictureBox cls;

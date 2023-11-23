@@ -1,6 +1,6 @@
 ﻿namespace JaxCore.res.UCs
 {
-    partial class UC_tab_home
+    partial class UC_tab_info
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,25 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.topbar = new Siticone.UI.WinForms.SiticonePanel();
-            this.flyouts_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.mixer_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.clocks_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.valli_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.idle_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.idle = new Siticone.UI.WinForms.SiticoneButton();
-            this.valli = new Siticone.UI.WinForms.SiticoneButton();
-            this.clocks = new Siticone.UI.WinForms.SiticoneButton();
-            this.mixer = new Siticone.UI.WinForms.SiticoneButton();
-            this.flyouts = new Siticone.UI.WinForms.SiticoneButton();
+            this.title = new System.Windows.Forms.Label();
+            this.siticoneGradientCircleButton2 = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
+            this.siticoneGradientCircleButton1 = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ico = new System.Windows.Forms.PictureBox();
             this.site = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.kofi = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.discord = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.deviant = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
-            this.jaxsplash = new System.Windows.Forms.PictureBox();
+            this.dismal_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.topbar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jaxsplash)).BeginInit();
             this.SuspendLayout();
             // 
             // topbar
@@ -57,123 +51,86 @@
             this.topbar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.topbar.BorderRadius = 10;
             this.topbar.BorderThickness = 1;
+            this.topbar.Controls.Add(this.title);
             this.topbar.Controls.Add(this.ico);
             this.topbar.Controls.Add(this.site);
             this.topbar.Controls.Add(this.kofi);
             this.topbar.Controls.Add(this.discord);
             this.topbar.Controls.Add(this.deviant);
-            this.topbar.Controls.Add(this.jaxsplash);
             this.topbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.topbar.Location = new System.Drawing.Point(-10, -10);
             this.topbar.Name = "topbar";
             this.topbar.ShadowDecoration.Parent = this.topbar;
             this.topbar.Size = new System.Drawing.Size(1258, 72);
-            this.topbar.TabIndex = 2;
+            this.topbar.TabIndex = 3;
             // 
-            // flyouts_eli
+            // title
             // 
-            this.flyouts_eli.BorderRadius = 15;
-            this.flyouts_eli.TargetControl = this.flyouts;
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Segoe UI Variable Display", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.title.Location = new System.Drawing.Point(73, 16);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(130, 49);
+            this.title.TabIndex = 10;
+            this.title.Text = "About";
             // 
-            // mixer_eli
+            // siticoneGradientCircleButton2
             // 
-            this.mixer_eli.BorderRadius = 15;
-            this.mixer_eli.TargetControl = this.mixer;
+            this.siticoneGradientCircleButton2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientCircleButton2.BackgroundImage = global::JaxCore.Properties.Resources.dismal;
+            this.siticoneGradientCircleButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.siticoneGradientCircleButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.siticoneGradientCircleButton2.BorderThickness = 1;
+            this.siticoneGradientCircleButton2.CheckedState.Parent = this.siticoneGradientCircleButton2;
+            this.siticoneGradientCircleButton2.CustomImages.Parent = this.siticoneGradientCircleButton2;
+            this.siticoneGradientCircleButton2.FillColor = System.Drawing.Color.Empty;
+            this.siticoneGradientCircleButton2.FillColor2 = System.Drawing.Color.Empty;
+            this.siticoneGradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneGradientCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.siticoneGradientCircleButton2.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientCircleButton2.HoveredState.Parent = this.siticoneGradientCircleButton2;
+            this.siticoneGradientCircleButton2.ImageSize = new System.Drawing.Size(25, 25);
+            this.siticoneGradientCircleButton2.Location = new System.Drawing.Point(1123, 438);
+            this.siticoneGradientCircleButton2.Name = "siticoneGradientCircleButton2";
+            this.siticoneGradientCircleButton2.ShadowDecoration.Mode = Siticone.UI.WinForms.Enums.ShadowMode.Circle;
+            this.siticoneGradientCircleButton2.ShadowDecoration.Parent = this.siticoneGradientCircleButton2;
+            this.siticoneGradientCircleButton2.Size = new System.Drawing.Size(49, 49);
+            this.siticoneGradientCircleButton2.TabIndex = 12;
+            this.siticoneGradientCircleButton2.Tile = false;
+            this.siticoneGradientCircleButton2.UseTransparentBackground = true;
             // 
-            // clocks_eli
+            // siticoneGradientCircleButton1
             // 
-            this.clocks_eli.BorderRadius = 15;
-            this.clocks_eli.TargetControl = this.clocks;
+            this.siticoneGradientCircleButton1.BorderColor = System.Drawing.Color.Empty;
+            this.siticoneGradientCircleButton1.BorderThickness = 1;
+            this.siticoneGradientCircleButton1.CheckedState.Parent = this.siticoneGradientCircleButton1;
+            this.siticoneGradientCircleButton1.CustomImages.Parent = this.siticoneGradientCircleButton1;
+            this.siticoneGradientCircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.siticoneGradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.siticoneGradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneGradientCircleButton1.ForeColor = System.Drawing.Color.White;
+            this.siticoneGradientCircleButton1.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientCircleButton1.HoveredState.Parent = this.siticoneGradientCircleButton1;
+            this.siticoneGradientCircleButton1.Image = global::JaxCore.Properties.Resources.Jax;
+            this.siticoneGradientCircleButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.siticoneGradientCircleButton1.Location = new System.Drawing.Point(1178, 438);
+            this.siticoneGradientCircleButton1.Name = "siticoneGradientCircleButton1";
+            this.siticoneGradientCircleButton1.ShadowDecoration.Mode = Siticone.UI.WinForms.Enums.ShadowMode.Circle;
+            this.siticoneGradientCircleButton1.ShadowDecoration.Parent = this.siticoneGradientCircleButton1;
+            this.siticoneGradientCircleButton1.Size = new System.Drawing.Size(49, 49);
+            this.siticoneGradientCircleButton1.TabIndex = 11;
+            this.siticoneGradientCircleButton1.Tile = false;
             // 
-            // valli_eli
+            // pictureBox1
             // 
-            this.valli_eli.BorderRadius = 15;
-            this.valli_eli.TargetControl = this.valli;
-            // 
-            // idle_eli
-            // 
-            this.idle_eli.BorderRadius = 15;
-            this.idle_eli.TargetControl = this.idle;
-            // 
-            // idle
-            // 
-            this.idle.BackgroundImage = global::JaxCore.Properties.Resources.idle;
-            this.idle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.idle.CheckedState.Parent = this.idle;
-            this.idle.CustomImages.Parent = this.idle;
-            this.idle.FillColor = System.Drawing.Color.Transparent;
-            this.idle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.idle.ForeColor = System.Drawing.Color.White;
-            this.idle.HoveredState.Parent = this.idle;
-            this.idle.Location = new System.Drawing.Point(810, 285);
-            this.idle.Name = "idle";
-            this.idle.ShadowDecoration.Parent = this.idle;
-            this.idle.Size = new System.Drawing.Size(321, 212);
-            this.idle.TabIndex = 8;
-            // 
-            // valli
-            // 
-            this.valli.BackgroundImage = global::JaxCore.Properties.Resources.valli;
-            this.valli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.valli.CheckedState.Parent = this.valli;
-            this.valli.CustomImages.Parent = this.valli;
-            this.valli.FillColor = System.Drawing.Color.Transparent;
-            this.valli.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.valli.ForeColor = System.Drawing.Color.White;
-            this.valli.HoveredState.Parent = this.valli;
-            this.valli.Location = new System.Drawing.Point(453, 285);
-            this.valli.Name = "valli";
-            this.valli.ShadowDecoration.Parent = this.valli;
-            this.valli.Size = new System.Drawing.Size(321, 212);
-            this.valli.TabIndex = 7;
-            // 
-            // clocks
-            // 
-            this.clocks.BackgroundImage = global::JaxCore.Properties.Resources.mclocks;
-            this.clocks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.clocks.CheckedState.Parent = this.clocks;
-            this.clocks.CustomImages.Parent = this.clocks;
-            this.clocks.FillColor = System.Drawing.Color.Transparent;
-            this.clocks.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.clocks.ForeColor = System.Drawing.Color.White;
-            this.clocks.HoveredState.Parent = this.clocks;
-            this.clocks.Location = new System.Drawing.Point(94, 285);
-            this.clocks.Name = "clocks";
-            this.clocks.ShadowDecoration.Parent = this.clocks;
-            this.clocks.Size = new System.Drawing.Size(321, 212);
-            this.clocks.TabIndex = 6;
-            // 
-            // mixer
-            // 
-            this.mixer.BackgroundImage = global::JaxCore.Properties.Resources.mixer;
-            this.mixer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mixer.CheckedState.Parent = this.mixer;
-            this.mixer.CustomImages.Parent = this.mixer;
-            this.mixer.FillColor = System.Drawing.Color.Transparent;
-            this.mixer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.mixer.ForeColor = System.Drawing.Color.White;
-            this.mixer.HoveredState.Parent = this.mixer;
-            this.mixer.Location = new System.Drawing.Point(673, 67);
-            this.mixer.Name = "mixer";
-            this.mixer.ShadowDecoration.Parent = this.mixer;
-            this.mixer.Size = new System.Drawing.Size(458, 212);
-            this.mixer.TabIndex = 5;
-            // 
-            // flyouts
-            // 
-            this.flyouts.BackgroundImage = global::JaxCore.Properties.Resources.flyouts;
-            this.flyouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flyouts.CheckedState.Parent = this.flyouts;
-            this.flyouts.CustomImages.Parent = this.flyouts;
-            this.flyouts.FillColor = System.Drawing.Color.Transparent;
-            this.flyouts.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.flyouts.ForeColor = System.Drawing.Color.White;
-            this.flyouts.HoveredState.Parent = this.flyouts;
-            this.flyouts.Location = new System.Drawing.Point(94, 67);
-            this.flyouts.Name = "flyouts";
-            this.flyouts.ShadowDecoration.Parent = this.flyouts;
-            this.flyouts.Size = new System.Drawing.Size(573, 212);
-            this.flyouts.TabIndex = 4;
+            this.pictureBox1.BackgroundImage = global::JaxCore.Properties.Resources.inf_splash;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 68);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1235, 364);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // ico
             // 
@@ -208,7 +165,6 @@
             this.site.Size = new System.Drawing.Size(49, 49);
             this.site.TabIndex = 7;
             this.site.Tile = false;
-            this.site.Click += new System.EventHandler(this.site_Click);
             // 
             // kofi
             // 
@@ -233,7 +189,6 @@
             this.kofi.Size = new System.Drawing.Size(49, 49);
             this.kofi.TabIndex = 6;
             this.kofi.Tile = false;
-            this.kofi.Click += new System.EventHandler(this.kofi_Click);
             // 
             // discord
             // 
@@ -258,7 +213,6 @@
             this.discord.Size = new System.Drawing.Size(49, 49);
             this.discord.TabIndex = 5;
             this.discord.Tile = false;
-            this.discord.Click += new System.EventHandler(this.discord_Click);
             // 
             // deviant
             // 
@@ -283,55 +237,43 @@
             this.deviant.Size = new System.Drawing.Size(49, 49);
             this.deviant.TabIndex = 4;
             this.deviant.Tile = false;
-            this.deviant.Click += new System.EventHandler(this.deviant_Click);
             // 
-            // jaxsplash
+            // dismal_eli
             // 
-            this.jaxsplash.BackgroundImage = global::JaxCore.Properties.Resources.jaxsplash;
-            this.jaxsplash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.jaxsplash.Location = new System.Drawing.Point(73, 16);
-            this.jaxsplash.Name = "jaxsplash";
-            this.jaxsplash.Size = new System.Drawing.Size(143, 49);
-            this.jaxsplash.TabIndex = 3;
-            this.jaxsplash.TabStop = false;
+            this.dismal_eli.BorderRadius = 50;
+            this.dismal_eli.TargetControl = this.siticoneGradientCircleButton2;
             // 
-            // UC_tab_home
+            // UC_tab_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.Controls.Add(this.idle);
-            this.Controls.Add(this.valli);
-            this.Controls.Add(this.clocks);
-            this.Controls.Add(this.mixer);
-            this.Controls.Add(this.flyouts);
+            this.Controls.Add(this.siticoneGradientCircleButton2);
+            this.Controls.Add(this.siticoneGradientCircleButton1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topbar);
-            this.Name = "UC_tab_home";
+            this.Name = "UC_tab_info";
             this.Size = new System.Drawing.Size(1235, 500);
             this.topbar.ResumeLayout(false);
+            this.topbar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jaxsplash)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private Siticone.UI.WinForms.SiticonePanel topbar;
-        private System.Windows.Forms.PictureBox jaxsplash;
-        private Siticone.UI.WinForms.SiticoneButton flyouts;
-        private Siticone.UI.WinForms.SiticoneButton mixer;
-        private Siticone.UI.WinForms.SiticoneButton clocks;
-        private Siticone.UI.WinForms.SiticoneButton valli;
-        private Siticone.UI.WinForms.SiticoneButton idle;
-        private Siticone.UI.WinForms.SiticoneElipse flyouts_eli;
-        private Siticone.UI.WinForms.SiticoneElipse mixer_eli;
-        private Siticone.UI.WinForms.SiticoneElipse clocks_eli;
-        private Siticone.UI.WinForms.SiticoneElipse valli_eli;
-        private Siticone.UI.WinForms.SiticoneElipse idle_eli;
-        private Siticone.UI.WinForms.SiticoneGradientCircleButton deviant;
-        private Siticone.UI.WinForms.SiticoneGradientCircleButton discord;
-        private Siticone.UI.WinForms.SiticoneGradientCircleButton kofi;
-        private Siticone.UI.WinForms.SiticoneGradientCircleButton site;
         private System.Windows.Forms.PictureBox ico;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton site;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton kofi;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton discord;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton deviant;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton siticoneGradientCircleButton1;
+        private Siticone.UI.WinForms.SiticoneGradientCircleButton siticoneGradientCircleButton2;
+        private Siticone.UI.WinForms.SiticoneElipse dismal_eli;
     }
 }

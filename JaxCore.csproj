@@ -68,6 +68,24 @@
     <Compile Include="res\UCs\UC_tab_home.Designer.cs">
       <DependentUpon>UC_tab_home.cs</DependentUpon>
     </Compile>
+    <Compile Include="res\UCs\UC_tab_info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="res\UCs\UC_tab_info.Designer.cs">
+      <DependentUpon>UC_tab_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="res\UCs\UC_tab_lib.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="res\UCs\UC_tab_lib.Designer.cs">
+      <DependentUpon>UC_tab_lib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="res\UCs\UC_tab_shop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="res\UCs\UC_tab_shop.Designer.cs">
+      <DependentUpon>UC_tab_shop.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +101,15 @@
     </Compile>
     <EmbeddedResource Include="res\UCs\UC_tab_home.resx">
       <DependentUpon>UC_tab_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\UCs\UC_tab_info.resx">
+      <DependentUpon>UC_tab_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\UCs\UC_tab_lib.resx">
+      <DependentUpon>UC_tab_lib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\UCs\UC_tab_shop.resx">
+      <DependentUpon>UC_tab_shop.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,6 +192,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JaxCore.ico" />
+    <None Include="res\dismal.png" />
+    <None Include="res\Jax.png" />
+    <None Include="res\tabs\inf_splash.png" />
+    <None Include="res\modules\Keylaunch_ico_alt.png" />
+    <None Include="res\modules\IdleStyle_ico.png" />
+    <None Include="res\nav\right.png" />
+    <None Include="res\store\VeklValli.png" />
+    <None Include="res\modules\ValliStart_ico_alt.png" />
+    <None Include="res\store\VeklFlyouts.png" />
+    <None Include="res\modules\YourFlyouts_ico_alt.png" />
+    <None Include="res\store\SleekFlyouts.png" />
+    <None Include="res\modules\YourMixer_ico_alt.png" />
+    <None Include="res\store\VeklMixer.png" />
+    <None Include="res\modules\YourMixer_ico.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
