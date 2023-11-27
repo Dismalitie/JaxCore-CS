@@ -1,0 +1,17 @@
+C:\Users\harry\source\repos\JaxCore\JaxCore\bin\Debug\JaxCore.exe.config
+C:\Users\harry\source\repos\JaxCore\JaxCore\bin\Debug\JaxCore.exe
+C:\Users\harry\source\repos\JaxCore\JaxCore\bin\Debug\JaxCore.pdb
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.csproj.AssemblyReference.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.Form1.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.Properties.Resources.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.csproj.GenerateResource.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.csproj.CoreCompileInputs.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.exe
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.pdb
+C:\Users\harry\source\repos\JaxCore\JaxCore\bin\Debug\Siticone.UI.dll
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.csproj.CopyComplete
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_home.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_shop.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_lib.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.res.UCs.UC_tab_info.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore\obj\Debug\JaxCore.DevTools.resources
