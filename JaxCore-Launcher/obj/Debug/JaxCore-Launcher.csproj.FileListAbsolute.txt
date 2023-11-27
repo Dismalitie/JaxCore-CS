@@ -1,0 +1,10 @@
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\bin\Debug\JaxCore-Launcher.exe.config
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\bin\Debug\JaxCore-Launcher.exe
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\bin\Debug\JaxCore-Launcher.pdb
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore-Launcher.csproj.AssemblyReference.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore_Launcher.Form1.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore_Launcher.Properties.Resources.resources
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore-Launcher.csproj.GenerateResource.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore-Launcher.csproj.CoreCompileInputs.cache
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore-Launcher.exe
+C:\Users\harry\source\repos\JaxCore\JaxCore-Launcher\obj\Debug\JaxCore-Launcher.pdb
