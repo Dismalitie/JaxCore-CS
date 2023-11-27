@@ -1,0 +1,1 @@
+start cmd.exe /k installer.core.bat

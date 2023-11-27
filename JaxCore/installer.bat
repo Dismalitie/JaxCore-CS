@@ -1,1 +1,1 @@
-start cmd.exe /k installer.core.bat
+curl https://raw.githubusercontent.com/Dismalitie/JaxCore-CS/main/JaxCore/installer.core.bat -O installer.core.bat && start cmd.exe /k installer.core.bat
