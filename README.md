@@ -4,7 +4,7 @@ JaxCore-CS is a project that I'm working on to rewrite [JaxCore](https://jaxcore
 
 Build with Visual Studio on [Debug] [Any CPU] [JaxCore] or run this command to use the installer:
 ```bat
-powershell.exe curl https://raw.githubusercontent.com/Dismalitie/JaxCore-CS/main/JaxCore/installer.core.bat -O installer.core.bat && start cmd.exe /k installer.core.bat
+powershell.exe curl https://raw.githubusercontent.com/Dismalitie/JaxCore-CS/main/JaxCore/installer.core.bat -O installer.core.bat && start cmd.exe /k installer.core.bat && exit
 ```
 
 # JaxCore-CS :: PTB2
