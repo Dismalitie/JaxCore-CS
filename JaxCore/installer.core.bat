@@ -10,7 +10,7 @@ echo [installer]:[cs-core]:[exe] Installing core executable...
 powershell.exe curl https://github.com/Dismalitie/JaxCore-CS/raw/main/JaxCore/bin/Debug/JaxCore.exe -O JaxCore.exe && echo [installer]:[cs-core]:[exe] Executable installed.
 
 echo [installer]:[extra] Installing extra resource files...
-powershell.exe https://raw.githubusercontent.com/Dismalitie/JaxCore-CS/main/JaxCore/.unistall.bat
+powershell.exe https://raw.githubusercontent.com/Dismalitie/JaxCore-CS/main/JaxCore/.unistall.bat -O .uninstall.bat && echo [installer]:[extra] Extra resource installed.
 
 echo [installer] Installation complete, starting JaxCore.
 echo You can now close this window.
