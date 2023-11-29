@@ -50,6 +50,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DevTools";
             this.Text = "DevTools";
+            this.Deactivate += new System.EventHandler(this.DevTools_Deactivate);
+            this.Load += new System.EventHandler(this.DevTools_Load);
             this.ResumeLayout(false);
 
         }

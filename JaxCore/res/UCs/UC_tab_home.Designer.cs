@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.topbar = new Siticone.UI.WinForms.SiticonePanel();
-            this.flyouts_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.mixer_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.clocks_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.valli_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.idle_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.idle = new Siticone.UI.WinForms.SiticoneButton();
-            this.valli = new Siticone.UI.WinForms.SiticoneButton();
-            this.clocks = new Siticone.UI.WinForms.SiticoneButton();
-            this.mixer = new Siticone.UI.WinForms.SiticoneButton();
-            this.flyouts = new Siticone.UI.WinForms.SiticoneButton();
             this.ico = new System.Windows.Forms.PictureBox();
             this.site = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.kofi = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.discord = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.deviant = new Siticone.UI.WinForms.SiticoneGradientCircleButton();
             this.jaxsplash = new System.Windows.Forms.PictureBox();
+            this.flyouts_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.flyouts = new Siticone.UI.WinForms.SiticoneButton();
+            this.mixer_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.mixer = new Siticone.UI.WinForms.SiticoneButton();
+            this.clocks_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.clocks = new Siticone.UI.WinForms.SiticoneButton();
+            this.valli_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.valli = new Siticone.UI.WinForms.SiticoneButton();
+            this.idle_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.idle = new Siticone.UI.WinForms.SiticoneButton();
             this.topbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jaxsplash)).BeginInit();
@@ -69,111 +69,6 @@
             this.topbar.ShadowDecoration.Parent = this.topbar;
             this.topbar.Size = new System.Drawing.Size(1258, 72);
             this.topbar.TabIndex = 2;
-            // 
-            // flyouts_eli
-            // 
-            this.flyouts_eli.BorderRadius = 15;
-            this.flyouts_eli.TargetControl = this.flyouts;
-            // 
-            // mixer_eli
-            // 
-            this.mixer_eli.BorderRadius = 15;
-            this.mixer_eli.TargetControl = this.mixer;
-            // 
-            // clocks_eli
-            // 
-            this.clocks_eli.BorderRadius = 15;
-            this.clocks_eli.TargetControl = this.clocks;
-            // 
-            // valli_eli
-            // 
-            this.valli_eli.BorderRadius = 15;
-            this.valli_eli.TargetControl = this.valli;
-            // 
-            // idle_eli
-            // 
-            this.idle_eli.BorderRadius = 15;
-            this.idle_eli.TargetControl = this.idle;
-            // 
-            // idle
-            // 
-            this.idle.BackgroundImage = global::JaxCore.Properties.Resources.idle;
-            this.idle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.idle.CheckedState.Parent = this.idle;
-            this.idle.CustomImages.Parent = this.idle;
-            this.idle.FillColor = System.Drawing.Color.Transparent;
-            this.idle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.idle.ForeColor = System.Drawing.Color.White;
-            this.idle.HoveredState.Parent = this.idle;
-            this.idle.Location = new System.Drawing.Point(810, 285);
-            this.idle.Name = "idle";
-            this.idle.ShadowDecoration.Parent = this.idle;
-            this.idle.Size = new System.Drawing.Size(321, 212);
-            this.idle.TabIndex = 8;
-            // 
-            // valli
-            // 
-            this.valli.BackgroundImage = global::JaxCore.Properties.Resources.valli;
-            this.valli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.valli.CheckedState.Parent = this.valli;
-            this.valli.CustomImages.Parent = this.valli;
-            this.valli.FillColor = System.Drawing.Color.Transparent;
-            this.valli.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.valli.ForeColor = System.Drawing.Color.White;
-            this.valli.HoveredState.Parent = this.valli;
-            this.valli.Location = new System.Drawing.Point(453, 285);
-            this.valli.Name = "valli";
-            this.valli.ShadowDecoration.Parent = this.valli;
-            this.valli.Size = new System.Drawing.Size(321, 212);
-            this.valli.TabIndex = 7;
-            // 
-            // clocks
-            // 
-            this.clocks.BackgroundImage = global::JaxCore.Properties.Resources.mclocks;
-            this.clocks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.clocks.CheckedState.Parent = this.clocks;
-            this.clocks.CustomImages.Parent = this.clocks;
-            this.clocks.FillColor = System.Drawing.Color.Transparent;
-            this.clocks.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.clocks.ForeColor = System.Drawing.Color.White;
-            this.clocks.HoveredState.Parent = this.clocks;
-            this.clocks.Location = new System.Drawing.Point(94, 285);
-            this.clocks.Name = "clocks";
-            this.clocks.ShadowDecoration.Parent = this.clocks;
-            this.clocks.Size = new System.Drawing.Size(321, 212);
-            this.clocks.TabIndex = 6;
-            // 
-            // mixer
-            // 
-            this.mixer.BackgroundImage = global::JaxCore.Properties.Resources.mixer;
-            this.mixer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mixer.CheckedState.Parent = this.mixer;
-            this.mixer.CustomImages.Parent = this.mixer;
-            this.mixer.FillColor = System.Drawing.Color.Transparent;
-            this.mixer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.mixer.ForeColor = System.Drawing.Color.White;
-            this.mixer.HoveredState.Parent = this.mixer;
-            this.mixer.Location = new System.Drawing.Point(673, 67);
-            this.mixer.Name = "mixer";
-            this.mixer.ShadowDecoration.Parent = this.mixer;
-            this.mixer.Size = new System.Drawing.Size(458, 212);
-            this.mixer.TabIndex = 5;
-            // 
-            // flyouts
-            // 
-            this.flyouts.BackgroundImage = global::JaxCore.Properties.Resources.flyouts;
-            this.flyouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flyouts.CheckedState.Parent = this.flyouts;
-            this.flyouts.CustomImages.Parent = this.flyouts;
-            this.flyouts.FillColor = System.Drawing.Color.Transparent;
-            this.flyouts.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.flyouts.ForeColor = System.Drawing.Color.White;
-            this.flyouts.HoveredState.Parent = this.flyouts;
-            this.flyouts.Location = new System.Drawing.Point(94, 67);
-            this.flyouts.Name = "flyouts";
-            this.flyouts.ShadowDecoration.Parent = this.flyouts;
-            this.flyouts.Size = new System.Drawing.Size(573, 212);
-            this.flyouts.TabIndex = 4;
             // 
             // ico
             // 
@@ -295,6 +190,111 @@
             this.jaxsplash.TabIndex = 3;
             this.jaxsplash.TabStop = false;
             this.jaxsplash.Click += new System.EventHandler(this.jaxsplash_Click);
+            // 
+            // flyouts_eli
+            // 
+            this.flyouts_eli.BorderRadius = 15;
+            this.flyouts_eli.TargetControl = this.flyouts;
+            // 
+            // flyouts
+            // 
+            this.flyouts.BackgroundImage = global::JaxCore.Properties.Resources.flyouts;
+            this.flyouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flyouts.CheckedState.Parent = this.flyouts;
+            this.flyouts.CustomImages.Parent = this.flyouts;
+            this.flyouts.FillColor = System.Drawing.Color.Transparent;
+            this.flyouts.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.flyouts.ForeColor = System.Drawing.Color.White;
+            this.flyouts.HoveredState.Parent = this.flyouts;
+            this.flyouts.Location = new System.Drawing.Point(94, 67);
+            this.flyouts.Name = "flyouts";
+            this.flyouts.ShadowDecoration.Parent = this.flyouts;
+            this.flyouts.Size = new System.Drawing.Size(573, 212);
+            this.flyouts.TabIndex = 4;
+            // 
+            // mixer_eli
+            // 
+            this.mixer_eli.BorderRadius = 15;
+            this.mixer_eli.TargetControl = this.mixer;
+            // 
+            // mixer
+            // 
+            this.mixer.BackgroundImage = global::JaxCore.Properties.Resources.mixer;
+            this.mixer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mixer.CheckedState.Parent = this.mixer;
+            this.mixer.CustomImages.Parent = this.mixer;
+            this.mixer.FillColor = System.Drawing.Color.Transparent;
+            this.mixer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mixer.ForeColor = System.Drawing.Color.White;
+            this.mixer.HoveredState.Parent = this.mixer;
+            this.mixer.Location = new System.Drawing.Point(673, 67);
+            this.mixer.Name = "mixer";
+            this.mixer.ShadowDecoration.Parent = this.mixer;
+            this.mixer.Size = new System.Drawing.Size(458, 212);
+            this.mixer.TabIndex = 5;
+            // 
+            // clocks_eli
+            // 
+            this.clocks_eli.BorderRadius = 15;
+            this.clocks_eli.TargetControl = this.clocks;
+            // 
+            // clocks
+            // 
+            this.clocks.BackgroundImage = global::JaxCore.Properties.Resources.mclocks;
+            this.clocks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.clocks.CheckedState.Parent = this.clocks;
+            this.clocks.CustomImages.Parent = this.clocks;
+            this.clocks.FillColor = System.Drawing.Color.Transparent;
+            this.clocks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.clocks.ForeColor = System.Drawing.Color.White;
+            this.clocks.HoveredState.Parent = this.clocks;
+            this.clocks.Location = new System.Drawing.Point(94, 285);
+            this.clocks.Name = "clocks";
+            this.clocks.ShadowDecoration.Parent = this.clocks;
+            this.clocks.Size = new System.Drawing.Size(321, 212);
+            this.clocks.TabIndex = 6;
+            // 
+            // valli_eli
+            // 
+            this.valli_eli.BorderRadius = 15;
+            this.valli_eli.TargetControl = this.valli;
+            // 
+            // valli
+            // 
+            this.valli.BackgroundImage = global::JaxCore.Properties.Resources.valli;
+            this.valli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.valli.CheckedState.Parent = this.valli;
+            this.valli.CustomImages.Parent = this.valli;
+            this.valli.FillColor = System.Drawing.Color.Transparent;
+            this.valli.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.valli.ForeColor = System.Drawing.Color.White;
+            this.valli.HoveredState.Parent = this.valli;
+            this.valli.Location = new System.Drawing.Point(453, 285);
+            this.valli.Name = "valli";
+            this.valli.ShadowDecoration.Parent = this.valli;
+            this.valli.Size = new System.Drawing.Size(321, 212);
+            this.valli.TabIndex = 7;
+            // 
+            // idle_eli
+            // 
+            this.idle_eli.BorderRadius = 15;
+            this.idle_eli.TargetControl = this.idle;
+            // 
+            // idle
+            // 
+            this.idle.BackgroundImage = global::JaxCore.Properties.Resources.idle;
+            this.idle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.idle.CheckedState.Parent = this.idle;
+            this.idle.CustomImages.Parent = this.idle;
+            this.idle.FillColor = System.Drawing.Color.Transparent;
+            this.idle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idle.ForeColor = System.Drawing.Color.White;
+            this.idle.HoveredState.Parent = this.idle;
+            this.idle.Location = new System.Drawing.Point(810, 285);
+            this.idle.Name = "idle";
+            this.idle.ShadowDecoration.Parent = this.idle;
+            this.idle.Size = new System.Drawing.Size(321, 212);
+            this.idle.TabIndex = 8;
             // 
             // UC_tab_home
             // 

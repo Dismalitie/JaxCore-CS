@@ -2,6 +2,6 @@
 {
     internal class Functions
     {
-        public string title = "JaxCore";
+        public bool devtools_active = false;
     }
 }

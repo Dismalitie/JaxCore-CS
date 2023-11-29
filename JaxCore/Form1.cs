@@ -55,8 +55,6 @@ namespace JaxCore
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Text = f.title;
-
             cont.Controls.Add(tab_home);
         }
 

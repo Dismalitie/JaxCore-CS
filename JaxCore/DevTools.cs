@@ -16,5 +16,17 @@ namespace JaxCore
         {
             InitializeComponent();
         }
+
+        Functions f = new Functions();
+
+        private void DevTools_Load(object sender, EventArgs e)
+        {
+            f.devtools_active = true;
+        }
+
+        private void DevTools_Deactivate(object sender, EventArgs e)
+        {
+            f.devtools_active = false;
+        }
     }
 }

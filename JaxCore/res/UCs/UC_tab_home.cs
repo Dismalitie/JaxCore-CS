@@ -17,7 +17,7 @@ namespace JaxCore.res.UCs
             InitializeComponent();
         }
 
-        DevTools devtools = new DevTools();
+        
         int devclick = 0;
 
         private void discord_Click(object sender, EventArgs e)
@@ -42,14 +42,19 @@ namespace JaxCore.res.UCs
 
         private void jaxsplash_Click(object sender, EventArgs e)
         {
-            if (devclick == 5)
+            Functions f = new Functions();
+            if (!f.devtools_active)
             {
-                devtools.Show();
-                devclick = 0;
-            }
-            else
-            {
-                devclick++;
+                if (devclick == 5)
+                {
+                    DevTools devtools = new DevTools();
+                    devtools.Show();
+                    devclick = 0;
+                }
+                else
+                {
+                    devclick++;
+                }
             }
         }
     }
