@@ -50,7 +50,7 @@ namespace JaxCore_Installer
             }
         }
 
-        private async void install_Click(object sender, EventArgs e)
+        private void install_Click(object sender, EventArgs e)
         {
             if (path == "<none>")
             {
@@ -60,7 +60,8 @@ namespace JaxCore_Installer
             }
 
             WebClient wc = new WebClient();
-            await wc.DownloadFileTaskAsync("dbg", path);
+
+            wc.DownloadFile("dbg", "");
         }
     }
 }
