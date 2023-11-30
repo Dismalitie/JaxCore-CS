@@ -32,32 +32,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.splash_shadow = new Siticone.UI.WinForms.SiticoneGradientPanel();
-            this.install = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.extra = new Siticone.UI.WinForms.SiticonePanel();
-            this.extra_ico = new System.Windows.Forms.PictureBox();
-            this.extra_prog = new System.Windows.Forms.PictureBox();
             this.extra_label = new System.Windows.Forms.Label();
             this.dependencies = new Siticone.UI.WinForms.SiticonePanel();
-            this.dep_ico = new System.Windows.Forms.PictureBox();
-            this.dep_prog = new System.Windows.Forms.PictureBox();
             this.dep_label = new System.Windows.Forms.Label();
             this.core = new Siticone.UI.WinForms.SiticonePanel();
+            this.core_label = new System.Windows.Forms.Label();
             this.core_ico = new System.Windows.Forms.PictureBox();
             this.core_prog = new System.Windows.Forms.PictureBox();
-            this.core_label = new System.Windows.Forms.Label();
+            this.extra_ico = new System.Windows.Forms.PictureBox();
+            this.extra_prog = new System.Windows.Forms.PictureBox();
+            this.dep_ico = new System.Windows.Forms.PictureBox();
+            this.dep_prog = new System.Windows.Forms.PictureBox();
+            this.install = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.select_dir = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.splash = new System.Windows.Forms.PictureBox();
             this.ico = new System.Windows.Forms.PictureBox();
             this.splash_shadow.SuspendLayout();
             this.extra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.extra_ico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extra_prog)).BeginInit();
             this.dependencies.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dep_ico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dep_prog)).BeginInit();
             this.core.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.core_ico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.core_prog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extra_ico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extra_prog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dep_ico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dep_prog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).BeginInit();
             this.SuspendLayout();
@@ -80,30 +80,6 @@
             this.splash_shadow.TabIndex = 3;
             this.splash_shadow.UseTransparentBackground = true;
             // 
-            // install
-            // 
-            this.install.BorderColor = System.Drawing.Color.Transparent;
-            this.install.BorderRadius = 10;
-            this.install.BorderThickness = 1;
-            this.install.CheckedState.Parent = this.install;
-            this.install.CustomImages.Parent = this.install;
-            this.install.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
-            this.install.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
-            this.install.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.install.ForeColor = System.Drawing.Color.White;
-            this.install.HoveredState.BorderColor = System.Drawing.Color.Transparent;
-            this.install.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.install.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(209)))), ((int)(((byte)(96)))));
-            this.install.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(209)))), ((int)(((byte)(96)))));
-            this.install.HoveredState.Parent = this.install;
-            this.install.Image = global::JaxCore_Installer.Properties.Resources.start;
-            this.install.Location = new System.Drawing.Point(19, 85);
-            this.install.Name = "install";
-            this.install.ShadowDecoration.Parent = this.install;
-            this.install.Size = new System.Drawing.Size(287, 50);
-            this.install.TabIndex = 7;
-            this.install.Click += new System.EventHandler(this.install_Click);
-            // 
             // extra
             // 
             this.extra.BackColor = System.Drawing.Color.Transparent;
@@ -119,26 +95,6 @@
             this.extra.ShadowDecoration.Parent = this.extra;
             this.extra.Size = new System.Drawing.Size(287, 55);
             this.extra.TabIndex = 7;
-            // 
-            // extra_ico
-            // 
-            this.extra_ico.BackgroundImage = global::JaxCore_Installer.Properties.Resources.extras;
-            this.extra_ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.extra_ico.Location = new System.Drawing.Point(7, 16);
-            this.extra_ico.Name = "extra_ico";
-            this.extra_ico.Size = new System.Drawing.Size(29, 21);
-            this.extra_ico.TabIndex = 8;
-            this.extra_ico.TabStop = false;
-            // 
-            // extra_prog
-            // 
-            this.extra_prog.BackgroundImage = global::JaxCore_Installer.Properties.Resources.waiting;
-            this.extra_prog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.extra_prog.Location = new System.Drawing.Point(247, 12);
-            this.extra_prog.Name = "extra_prog";
-            this.extra_prog.Size = new System.Drawing.Size(29, 31);
-            this.extra_prog.TabIndex = 5;
-            this.extra_prog.TabStop = false;
             // 
             // extra_label
             // 
@@ -167,26 +123,6 @@
             this.dependencies.Size = new System.Drawing.Size(287, 55);
             this.dependencies.TabIndex = 1;
             // 
-            // dep_ico
-            // 
-            this.dep_ico.BackgroundImage = global::JaxCore_Installer.Properties.Resources.dependencies;
-            this.dep_ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.dep_ico.Location = new System.Drawing.Point(7, 16);
-            this.dep_ico.Name = "dep_ico";
-            this.dep_ico.Size = new System.Drawing.Size(29, 21);
-            this.dep_ico.TabIndex = 6;
-            this.dep_ico.TabStop = false;
-            // 
-            // dep_prog
-            // 
-            this.dep_prog.BackgroundImage = global::JaxCore_Installer.Properties.Resources.check;
-            this.dep_prog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.dep_prog.Location = new System.Drawing.Point(247, 12);
-            this.dep_prog.Name = "dep_prog";
-            this.dep_prog.Size = new System.Drawing.Size(29, 31);
-            this.dep_prog.TabIndex = 5;
-            this.dep_prog.TabStop = false;
-            // 
             // dep_label
             // 
             this.dep_label.AutoSize = true;
@@ -214,6 +150,17 @@
             this.core.Size = new System.Drawing.Size(287, 55);
             this.core.TabIndex = 6;
             // 
+            // core_label
+            // 
+            this.core_label.AutoSize = true;
+            this.core_label.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.core_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.core_label.Location = new System.Drawing.Point(42, 16);
+            this.core_label.Name = "core_label";
+            this.core_label.Size = new System.Drawing.Size(47, 21);
+            this.core_label.TabIndex = 0;
+            this.core_label.Text = "Core";
+            // 
             // core_ico
             // 
             this.core_ico.BackgroundImage = global::JaxCore_Installer.Properties.Resources.core;
@@ -226,7 +173,7 @@
             // 
             // core_prog
             // 
-            this.core_prog.BackgroundImage = global::JaxCore_Installer.Properties.Resources.download;
+            this.core_prog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("core_prog.BackgroundImage")));
             this.core_prog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.core_prog.Location = new System.Drawing.Point(247, 12);
             this.core_prog.Name = "core_prog";
@@ -234,16 +181,69 @@
             this.core_prog.TabIndex = 5;
             this.core_prog.TabStop = false;
             // 
-            // core_label
+            // extra_ico
             // 
-            this.core_label.AutoSize = true;
-            this.core_label.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.core_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.core_label.Location = new System.Drawing.Point(42, 16);
-            this.core_label.Name = "core_label";
-            this.core_label.Size = new System.Drawing.Size(47, 21);
-            this.core_label.TabIndex = 0;
-            this.core_label.Text = "Core";
+            this.extra_ico.BackgroundImage = global::JaxCore_Installer.Properties.Resources.extras;
+            this.extra_ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.extra_ico.Location = new System.Drawing.Point(7, 16);
+            this.extra_ico.Name = "extra_ico";
+            this.extra_ico.Size = new System.Drawing.Size(29, 21);
+            this.extra_ico.TabIndex = 8;
+            this.extra_ico.TabStop = false;
+            // 
+            // extra_prog
+            // 
+            this.extra_prog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("extra_prog.BackgroundImage")));
+            this.extra_prog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.extra_prog.Location = new System.Drawing.Point(247, 12);
+            this.extra_prog.Name = "extra_prog";
+            this.extra_prog.Size = new System.Drawing.Size(29, 31);
+            this.extra_prog.TabIndex = 5;
+            this.extra_prog.TabStop = false;
+            // 
+            // dep_ico
+            // 
+            this.dep_ico.BackgroundImage = global::JaxCore_Installer.Properties.Resources.dependencies;
+            this.dep_ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.dep_ico.Location = new System.Drawing.Point(7, 16);
+            this.dep_ico.Name = "dep_ico";
+            this.dep_ico.Size = new System.Drawing.Size(29, 21);
+            this.dep_ico.TabIndex = 6;
+            this.dep_ico.TabStop = false;
+            // 
+            // dep_prog
+            // 
+            this.dep_prog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dep_prog.BackgroundImage")));
+            this.dep_prog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.dep_prog.Location = new System.Drawing.Point(247, 12);
+            this.dep_prog.Name = "dep_prog";
+            this.dep_prog.Size = new System.Drawing.Size(29, 31);
+            this.dep_prog.TabIndex = 5;
+            this.dep_prog.TabStop = false;
+            // 
+            // install
+            // 
+            this.install.BorderColor = System.Drawing.Color.Transparent;
+            this.install.BorderRadius = 10;
+            this.install.BorderThickness = 1;
+            this.install.CheckedState.Parent = this.install;
+            this.install.CustomImages.Parent = this.install;
+            this.install.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
+            this.install.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
+            this.install.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.install.ForeColor = System.Drawing.Color.White;
+            this.install.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.install.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.install.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(209)))), ((int)(((byte)(96)))));
+            this.install.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(209)))), ((int)(((byte)(96)))));
+            this.install.HoveredState.Parent = this.install;
+            this.install.Image = global::JaxCore_Installer.Properties.Resources.start;
+            this.install.Location = new System.Drawing.Point(19, 85);
+            this.install.Name = "install";
+            this.install.ShadowDecoration.Parent = this.install;
+            this.install.Size = new System.Drawing.Size(287, 50);
+            this.install.TabIndex = 7;
+            this.install.Click += new System.EventHandler(this.install_Click);
             // 
             // select_dir
             // 
@@ -312,16 +312,16 @@
             this.splash_shadow.ResumeLayout(false);
             this.extra.ResumeLayout(false);
             this.extra.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.extra_ico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extra_prog)).EndInit();
             this.dependencies.ResumeLayout(false);
             this.dependencies.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dep_ico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dep_prog)).EndInit();
             this.core.ResumeLayout(false);
             this.core.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.core_ico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.core_prog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extra_ico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extra_prog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dep_ico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dep_prog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ico)).EndInit();
             this.ResumeLayout(false);

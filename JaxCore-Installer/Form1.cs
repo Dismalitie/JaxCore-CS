@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsShortcutFactory;
 
 namespace JaxCore_Installer
 {
@@ -20,28 +16,28 @@ namespace JaxCore_Installer
         }
 
         string path = "<none>";
+        bool installing = false;
 
         private void select_dir_Click(object sender, EventArgs e)
         {
+            if (installing)
+            {
+                return;
+            }
+
             FolderBrowserDialog dlg = new FolderBrowserDialog();
 
             dlg.RootFolder = Environment.SpecialFolder.Desktop;
-            dlg.Description = "Select a folder to install JaxCore-CS to";
+            dlg.Description = "Select a folder to install JaxCore-CS to - we'll make a new subfolder called \"JaxCore-CS\"";
             dlg.ShowNewFolderButton = true;
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    path = dlg.SelectedPath.ToString();
-                    if (dlg.SelectedPath.Length > 36) // idk how but this solves a bug?
-                    {
-                        select_dir.Text = path;
-                    }
-                    else
-                    {
-                        select_dir.Text = path;
-                    }
+                    Directory.CreateDirectory(dlg.SelectedPath + "\\JaxCore-CS");
+                    path = dlg.SelectedPath;
+                    select_dir.Text = path;
                 }
                 catch (Exception ex)
                 {
@@ -50,18 +46,75 @@ namespace JaxCore_Installer
             }
         }
 
-        private void install_Click(object sender, EventArgs e)
+        private async void install_Click(object sender, EventArgs e)
         {
+            installing = true;
+
             if (path == "<none>")
             {
-                Directory.CreateDirectory(Environment.SpecialFolder.MyDocuments.ToString()+"\\JaxCore-CS");
-                path = Environment.SpecialFolder.MyDocuments.ToString() + "\\JaxCore-CS".ToString();
-                MessageBox.Show("Looks like you didn't set a install directory! Don't worry, we'll just install it in your documents under a new folder.", "JaxCore-CS Installer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\JaxCore-CS");
+                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\JaxCore-CS";
+                MessageBox.Show("Looks like you didn't set a install directory! Don't worry, we'll just install it in a subfolder on your Desktop.", "JaxCore-CS Installer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            WebClient wc = new WebClient();
+            install.FillColor = Color.FromArgb(35, 209, 96);
+            install.FillColor2 = Color.FromArgb(35, 209, 96);
+            install.HoveredState.FillColor = Color.FromArgb(35, 209, 96);
+            install.HoveredState.FillColor2 = Color.FromArgb(35, 209, 96);
+            install.Image = Properties.Resources.waiting;
 
-            wc.DownloadFile("dbg", "");
+            select_dir.Text = "Installing JaxCore!";
+            select_dir.Image = Properties.Resources.rocket;
+
+            dep_prog.BackgroundImage = Properties.Resources.download;
+            await Task.Run(async () =>
+            {
+                Process dep_install = new Process();
+                dep_install.StartInfo.FileName = "cmd.exe";
+                dep_install.StartInfo.RedirectStandardInput = true;
+                dep_install.StartInfo.RedirectStandardOutput = true;
+                dep_install.StartInfo.UseShellExecute = false;
+                dep_install.StartInfo.CreateNoWindow = true;
+                dep_install.Start();
+                dep_install.StandardInput.WriteLine($"powershell.exe curl https://github.com/Dismalitie/JaxCore-CS/raw/main/JaxCore/bin/Debug/Siticone.UI.dll -O {path}\\Siticone.UI.dll");
+                dep_install.StandardInput.Flush();
+                dep_install.StandardInput.Close();
+                dep_install.WaitForExit();
+            });
+            dep_prog.BackgroundImage = Properties.Resources.check;
+
+            core_prog.BackgroundImage = Properties.Resources.download;
+            await Task.Run(async () =>
+            {
+                Process core_install = new Process();
+                core_install.StartInfo.FileName = "cmd.exe";
+                core_install.StartInfo.RedirectStandardInput = true;
+                core_install.StartInfo.RedirectStandardOutput = true;
+                core_install.StartInfo.UseShellExecute = false;
+                core_install.StartInfo.CreateNoWindow = true;
+                core_install.Start();
+                core_install.StandardInput.WriteLine($"powershell.exe curl https://github.com/Dismalitie/JaxCore-CS/raw/main/JaxCore/bin/Debug/JaxCore.exe -O {path}\\JaxCore.exe");
+                core_install.StandardInput.Flush();
+                core_install.StandardInput.Close();
+                core_install.WaitForExit();
+            });
+            core_prog.BackgroundImage = Properties.Resources.check;
+
+            extra_prog.BackgroundImage = Properties.Resources.download;
+            await Task.Run(async () =>
+            {
+                WindowsShortcut lnk = new WindowsShortcut();
+                lnk.Description = "JaxCore-CS";
+                lnk.Path = path + "\\JaxCore.exe";
+                lnk.Save(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\JaxCore-CS.lnk");
+            });
+            extra_prog.BackgroundImage = Properties.Resources.check;
+
+            install.Image = Properties.Resources.check;
+
+            MessageBox.Show("JaxCore successfully installed!", "JaxCore-CS Installer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            System.Diagnostics.Process.Start($"{path}\\JaxCore.exe");
+            Application.Exit();
         }
     }
 }

@@ -121,6 +121,27 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="core_prog.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAEVJREFUSEvt
+        0EEKACAIBECf6vv7hKVuB28ReCh2wEO7QqAQ0W/MTNcMjCIOt12BhW0gDv7OOBx3hZe5E1o+6D0RET1J
+        ZAIHn7XVVon5FgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="extra_prog.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAEVJREFUSEvt
+        0EEKACAIBECf6vv7hKVuB28ReCh2wEO7QqAQ0W/MTNcMjCIOt12BhW0gDv7OOBx3hZe5E1o+6D0RET1J
+        ZAIHn7XVVon5FgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="dep_prog.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAEVJREFUSEvt
+        0EEKACAIBECf6vv7hKVuB28ReCh2wEO7QqAQ0W/MTNcMjCIOt12BhW0gDv7OOBx3hZe5E1o+6D0RET1J
+        ZAIHn7XVVon5FgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA

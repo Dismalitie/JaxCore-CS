@@ -10,3 +10,5 @@ C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\obj\Debug\JaxCore-Installe
 C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\obj\Debug\JaxCore-Installer.csproj.CopyComplete
 C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\obj\Debug\JaxCore-Installer.exe
 C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\obj\Debug\JaxCore-Installer.pdb
+C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\bin\Debug\WindowsShortcutFactory.dll
+C:\Users\harry\source\repos\JaxCore\JaxCore-Installer\bin\Debug\WindowsShortcutFactory.xml
