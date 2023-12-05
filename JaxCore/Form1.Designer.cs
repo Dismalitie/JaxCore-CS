@@ -31,7 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabbar = new Siticone.UI.WinForms.SiticonePanel();
+            this.lib = new Siticone.UI.WinForms.SiticoneGradientButton();
+            this.shop = new Siticone.UI.WinForms.SiticoneGradientButton();
+            this.home = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.topbar = new Siticone.UI.WinForms.SiticonePanel();
+            this.min = new System.Windows.Forms.PictureBox();
+            this.cls = new System.Windows.Forms.PictureBox();
+            this.icon = new System.Windows.Forms.PictureBox();
             this.win_eli = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.bar_drag = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.cont = new System.Windows.Forms.Panel();
@@ -41,18 +47,12 @@
             this.tabbar2 = new Siticone.UI.WinForms.SiticonePanel();
             this.settings = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.inf = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.lib = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.shop = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.home = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.min = new System.Windows.Forms.PictureBox();
-            this.cls = new System.Windows.Forms.PictureBox();
-            this.icon = new System.Windows.Forms.PictureBox();
             this.tabbar.SuspendLayout();
             this.topbar.SuspendLayout();
-            this.tabbar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cls)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
+            this.tabbar2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabbar
@@ -71,6 +71,79 @@
             this.tabbar.Size = new System.Drawing.Size(180, 61);
             this.tabbar.TabIndex = 0;
             // 
+            // lib
+            // 
+            this.lib.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lib.BorderRadius = 10;
+            this.lib.BorderThickness = 1;
+            this.lib.CheckedState.Parent = this.lib;
+            this.lib.CustomImages.Parent = this.lib;
+            this.lib.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lib.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lib.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lib.ForeColor = System.Drawing.Color.White;
+            this.lib.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.lib.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.lib.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
+            this.lib.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
+            this.lib.HoveredState.Parent = this.lib;
+            this.lib.Image = global::JaxCore.Properties.Resources.lib;
+            this.lib.Location = new System.Drawing.Point(120, 5);
+            this.lib.Name = "lib";
+            this.lib.ShadowDecoration.Parent = this.lib;
+            this.lib.Size = new System.Drawing.Size(50, 50);
+            this.lib.TabIndex = 2;
+            this.lib.Click += new System.EventHandler(this.lib_Click);
+            // 
+            // shop
+            // 
+            this.shop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.shop.BorderRadius = 10;
+            this.shop.BorderThickness = 1;
+            this.shop.CheckedState.Parent = this.shop;
+            this.shop.CustomImages.Parent = this.shop;
+            this.shop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.shop.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.shop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.shop.ForeColor = System.Drawing.Color.White;
+            this.shop.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.shop.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.shop.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
+            this.shop.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
+            this.shop.HoveredState.Parent = this.shop;
+            this.shop.Image = global::JaxCore.Properties.Resources.shop;
+            this.shop.Location = new System.Drawing.Point(64, 5);
+            this.shop.Name = "shop";
+            this.shop.ShadowDecoration.Parent = this.shop;
+            this.shop.Size = new System.Drawing.Size(50, 50);
+            this.shop.TabIndex = 1;
+            this.shop.Click += new System.EventHandler(this.shop_Click);
+            // 
+            // home
+            // 
+            this.home.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.home.BorderRadius = 10;
+            this.home.BorderThickness = 1;
+            this.home.CheckedState.Parent = this.home;
+            this.home.CustomImages.Parent = this.home;
+            this.home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
+            this.home.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
+            this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.home.ForeColor = System.Drawing.Color.White;
+            this.home.HoveredState.BorderColor = System.Drawing.Color.Transparent;
+            this.home.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.home.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
+            this.home.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
+            this.home.HoveredState.Parent = this.home;
+            this.home.Image = global::JaxCore.Properties.Resources._JaxCore;
+            this.home.ImageSize = new System.Drawing.Size(30, 30);
+            this.home.Location = new System.Drawing.Point(8, 5);
+            this.home.Name = "home";
+            this.home.ShadowDecoration.Parent = this.home;
+            this.home.Size = new System.Drawing.Size(50, 50);
+            this.home.TabIndex = 0;
+            this.home.Click += new System.EventHandler(this.home_Click);
+            // 
             // topbar
             // 
             this.topbar.BackColor = System.Drawing.Color.Transparent;
@@ -86,6 +159,42 @@
             this.topbar.ShadowDecoration.Parent = this.topbar;
             this.topbar.Size = new System.Drawing.Size(1254, 40);
             this.topbar.TabIndex = 1;
+            // 
+            // min
+            // 
+            this.min.BackgroundImage = global::JaxCore.Properties.Resources.minus;
+            this.min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.min.Location = new System.Drawing.Point(1184, 15);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(20, 20);
+            this.min.TabIndex = 3;
+            this.min.TabStop = false;
+            this.min.Click += new System.EventHandler(this.min_Click);
+            this.min.MouseEnter += new System.EventHandler(this.min_MouseEnter);
+            this.min.MouseLeave += new System.EventHandler(this.min_MouseLeave);
+            // 
+            // cls
+            // 
+            this.cls.BackgroundImage = global::JaxCore.Properties.Resources.x;
+            this.cls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cls.Location = new System.Drawing.Point(1210, 15);
+            this.cls.Name = "cls";
+            this.cls.Size = new System.Drawing.Size(20, 20);
+            this.cls.TabIndex = 2;
+            this.cls.TabStop = false;
+            this.cls.Click += new System.EventHandler(this.cls_Click);
+            this.cls.MouseEnter += new System.EventHandler(this.cls_MouseEnter);
+            this.cls.MouseLeave += new System.EventHandler(this.cls_MouseLeave);
+            // 
+            // icon
+            // 
+            this.icon.BackgroundImage = global::JaxCore.Properties.Resources._JaxCore;
+            this.icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.icon.Location = new System.Drawing.Point(20, 15);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(20, 20);
+            this.icon.TabIndex = 0;
+            this.icon.TabStop = false;
             // 
             // win_eli
             // 
@@ -180,115 +289,6 @@
             this.inf.TabIndex = 4;
             this.inf.Click += new System.EventHandler(this.inf_Click);
             // 
-            // lib
-            // 
-            this.lib.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lib.BorderRadius = 10;
-            this.lib.BorderThickness = 1;
-            this.lib.CheckedState.Parent = this.lib;
-            this.lib.CustomImages.Parent = this.lib;
-            this.lib.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lib.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lib.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lib.ForeColor = System.Drawing.Color.White;
-            this.lib.HoveredState.BorderColor = System.Drawing.Color.Transparent;
-            this.lib.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.lib.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
-            this.lib.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
-            this.lib.HoveredState.Parent = this.lib;
-            this.lib.Image = global::JaxCore.Properties.Resources.shop;
-            this.lib.Location = new System.Drawing.Point(64, 5);
-            this.lib.Name = "lib";
-            this.lib.ShadowDecoration.Parent = this.lib;
-            this.lib.Size = new System.Drawing.Size(50, 50);
-            this.lib.TabIndex = 2;
-            this.lib.Click += new System.EventHandler(this.lib_Click);
-            // 
-            // shop
-            // 
-            this.shop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.shop.BorderRadius = 10;
-            this.shop.BorderThickness = 1;
-            this.shop.CheckedState.Parent = this.shop;
-            this.shop.CustomImages.Parent = this.shop;
-            this.shop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.shop.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.shop.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.shop.ForeColor = System.Drawing.Color.White;
-            this.shop.HoveredState.BorderColor = System.Drawing.Color.Transparent;
-            this.shop.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.shop.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
-            this.shop.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
-            this.shop.HoveredState.Parent = this.shop;
-            this.shop.Image = global::JaxCore.Properties.Resources.lib;
-            this.shop.Location = new System.Drawing.Point(120, 5);
-            this.shop.Name = "shop";
-            this.shop.ShadowDecoration.Parent = this.shop;
-            this.shop.Size = new System.Drawing.Size(50, 50);
-            this.shop.TabIndex = 1;
-            this.shop.Click += new System.EventHandler(this.shop_Click);
-            // 
-            // home
-            // 
-            this.home.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.home.BorderRadius = 10;
-            this.home.BorderThickness = 1;
-            this.home.CheckedState.Parent = this.home;
-            this.home.CustomImages.Parent = this.home;
-            this.home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
-            this.home.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
-            this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.home.ForeColor = System.Drawing.Color.White;
-            this.home.HoveredState.BorderColor = System.Drawing.Color.Transparent;
-            this.home.HoveredState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.home.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(0)))));
-            this.home.HoveredState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(52)))), ((int)(((byte)(0)))));
-            this.home.HoveredState.Parent = this.home;
-            this.home.Image = global::JaxCore.Properties.Resources._JaxCore;
-            this.home.ImageSize = new System.Drawing.Size(30, 30);
-            this.home.Location = new System.Drawing.Point(8, 5);
-            this.home.Name = "home";
-            this.home.ShadowDecoration.Parent = this.home;
-            this.home.Size = new System.Drawing.Size(50, 50);
-            this.home.TabIndex = 0;
-            this.home.Click += new System.EventHandler(this.home_Click);
-            // 
-            // min
-            // 
-            this.min.BackgroundImage = global::JaxCore.Properties.Resources.minus;
-            this.min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.min.Location = new System.Drawing.Point(1184, 15);
-            this.min.Name = "min";
-            this.min.Size = new System.Drawing.Size(20, 20);
-            this.min.TabIndex = 3;
-            this.min.TabStop = false;
-            this.min.Click += new System.EventHandler(this.min_Click);
-            this.min.MouseEnter += new System.EventHandler(this.min_MouseEnter);
-            this.min.MouseLeave += new System.EventHandler(this.min_MouseLeave);
-            // 
-            // cls
-            // 
-            this.cls.BackgroundImage = global::JaxCore.Properties.Resources.x;
-            this.cls.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cls.Location = new System.Drawing.Point(1210, 15);
-            this.cls.Name = "cls";
-            this.cls.Size = new System.Drawing.Size(20, 20);
-            this.cls.TabIndex = 2;
-            this.cls.TabStop = false;
-            this.cls.Click += new System.EventHandler(this.cls_Click);
-            this.cls.MouseEnter += new System.EventHandler(this.cls_MouseEnter);
-            this.cls.MouseLeave += new System.EventHandler(this.cls_MouseLeave);
-            // 
-            // icon
-            // 
-            this.icon.BackgroundImage = global::JaxCore.Properties.Resources._JaxCore;
-            this.icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.icon.Location = new System.Drawing.Point(20, 15);
-            this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(20, 20);
-            this.icon.TabIndex = 0;
-            this.icon.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,10 +307,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabbar.ResumeLayout(false);
             this.topbar.ResumeLayout(false);
-            this.tabbar2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cls)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
+            this.tabbar2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -2,16 +2,13 @@
 
 JaxCore-CS is a project that I'm working on to rewrite [JaxCore](https://jaxcore.app/) in C# with Visual Studio - and yes I have permission.
 
-Build with Visual Studio on [Debug] [Any CPU] [JaxCore] or run click [here](https://github.com/Dismalitie/JaxCore-CS/releases/download/Installer/Installer.zip) to get the installer.
+Build with Visual Studio on [Debug] [Any CPU] [JaxCore] or get the lates build [here](https://github.com/Dismalitie/JaxCore-CS/tree/main/JaxCore-Installer/bin/Debug) - `Siticone.UI.dll` and `JaxCore-Installer.exe` are required.
 
-You will need to unzip the file and run `JaxCore-Installer.exe`.
-
-# JaxCore-CS :: PTB2
+# JaxCore-CS :: PTB3.A1
 
 ```ini
-[+] Shop
-[+] Library
-[+] Basic Functionality
-[+] Tab System functionality
-[*] All the other features
+    [+] Patched installation error
+    [+] Fixed tab orderings
+    [+] Fixed DevTools
+    [*] MClocks
 ```

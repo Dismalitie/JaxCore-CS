@@ -15,6 +15,17 @@ namespace JaxCore_Installer
             InitializeComponent();
         }
 
+        protected override CreateParams CreateParams // creates dropshadow
+        {
+            get
+            {
+                const int CS_DROPSHADOW = 0x20000;
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
+        }
+
         string path = "<none>";
         bool installing = false;
 
@@ -36,7 +47,7 @@ namespace JaxCore_Installer
                 try
                 {
                     Directory.CreateDirectory(dlg.SelectedPath + "\\JaxCore-CS");
-                    path = dlg.SelectedPath;
+                    path = dlg.SelectedPath + "\\JaxCore-CS";
                     select_dir.Text = path;
                 }
                 catch (Exception ex)
@@ -115,6 +126,16 @@ namespace JaxCore_Installer
             MessageBox.Show("JaxCore successfully installed!", "JaxCore-CS Installer", MessageBoxButtons.OK, MessageBoxIcon.Information);
             System.Diagnostics.Process.Start($"{path}\\JaxCore.exe");
             Application.Exit();
+        }
+
+        private void cls_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+
         }
     }
 }
