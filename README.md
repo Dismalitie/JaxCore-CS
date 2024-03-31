@@ -1,3 +1,6 @@
+> [!NOTE]
+> As of 31 of March 2024, the JaxCore development and support server has entered it's public archive state as it ended develpment in late 2022. And with it, this project too is also going to be archived.
+
 # JaxCore-CS
 
 JaxCore-CS is a project that I'm working on to rewrite [JaxCore](https://jaxcore.app/) in C# with Visual Studio - and yes I have permission.
